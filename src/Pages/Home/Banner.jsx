@@ -48,7 +48,6 @@ export default function Banner() {
       .then((result) => {
         setValue(result.data.collections.edges[0].node.id);
       })
-
       .catch((error) => console.log("error", error));
   }, []);
 
